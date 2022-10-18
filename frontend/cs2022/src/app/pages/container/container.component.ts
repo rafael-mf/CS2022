@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent implements OnInit {
 
@@ -16,13 +16,13 @@ export class ContainerComponent implements OnInit {
   // srcLogoReduzido = environment.logoReduzido;
 
   ngOnInit() {
-    let el: any = document.querySelector(".sidenav-superior")
-    const observer = new IntersectionObserver(
-      ([e]) => e.target.classList.toggle("sticky-menu", e.intersectionRatio < 1),
-      { threshold: [1] }
-    );
+    // let el: any = document.querySelector(".sidenav-superior")
+    // const observer = new IntersectionObserver(
+    //   ([e]) => e.target.classList.toggle("sticky-menu", e.intersectionRatio < 1),
+    //   { threshold: [1] }
+    // );
 
-    observer.observe(el);
+    // observer.observe(el);
   }
 
   isMobileDevice() {

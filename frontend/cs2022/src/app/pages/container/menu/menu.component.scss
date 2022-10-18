@@ -1,0 +1,12 @@
+.menu {
+  position                   : fixed;
+  bottom                     : 0;
+  width                      : 100%;
+  min-height                 : fit-content;
+  height                     : auto;
+  white-space                : nowrap;
+  overflow-x                 : scroll;
+  overflow-y                 : hidden;
+  z-index                    : 999;
+  -webkit-tap-highlight-color: transparent !important;
+}
