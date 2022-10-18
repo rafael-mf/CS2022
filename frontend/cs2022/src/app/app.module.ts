@@ -42,6 +42,7 @@ import { UsuariosComponent } from './pages/container/components/usuarios/usuario
 import { MatIconModule } from '@angular/material/icon';
 import { RecuperarSenhaComponent } from './pages/login/components/recuperar-senha/recuperar-senha.component';
 import { MenuDesktopComponent } from './pages/container/menu/menu-desktop/menu-desktop.component';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +63,7 @@ import { MenuDesktopComponent } from './pages/container/menu/menu-desktop/menu-d
     HttpClientModule,
     AppRoutingModule,
     MatIconModule,
+    MatButtonModule,
     MatInputModule,
     MatTabsModule,
     BrowserAnimationsModule,
