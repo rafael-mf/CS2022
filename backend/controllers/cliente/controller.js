@@ -11,7 +11,7 @@ exports.listarClientes = async (req, res) => {
         documento,
         telefone,
         endereco
-    FROM clientes`
+    FROM tbl_clientes`
         let result = (await bd.knex.raw(knexQuery))[0];
 
         result.forEach(e => {
@@ -42,7 +42,7 @@ exports.buscarCliente = async (req, res) => {
         documento,
         telefone,
         endereco
-    FROM clientes
+    FROM tbl_clientes
         WHERE id_cliente = ${cliente_id}`
         let result = (await bd.knex.raw(knexQuery))[0];
 

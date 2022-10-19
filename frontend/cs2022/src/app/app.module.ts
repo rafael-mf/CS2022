@@ -43,6 +43,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { RecuperarSenhaComponent } from './pages/login/components/recuperar-senha/recuperar-senha.component';
 import { MenuDesktopComponent } from './pages/container/menu/menu-desktop/menu-desktop.component';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,11 +60,13 @@ import { MatButtonModule } from '@angular/material/button';
 
    ],
   imports: [
-    BrowserModule,
     HttpClientModule,
+    BrowserModule,
     AppRoutingModule,
     MatIconModule,
+    MatInputModule,
     MatButtonModule,
+    FormsModule,
     MatInputModule,
     MatTabsModule,
     BrowserAnimationsModule,

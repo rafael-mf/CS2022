@@ -2,6 +2,7 @@
 const express = require('express');
 
 const cliente = require('./controllers/cliente/router');
+const ordem = require('./controllers/ordem/router');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
@@ -13,5 +14,6 @@ router.get('/', (req, res, next) => {
 
 
 router.use('/cliente',  cliente);
+router.use('/ordem',  ordem);
 
 module.exports = router;

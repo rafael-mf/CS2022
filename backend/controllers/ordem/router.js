@@ -4,5 +4,7 @@ const auth = require('../../auth');
 
 const router = new Router();
 
+router.get('/consultar/:ano', controller.listarOrdens);
+
 
 module.exports = router;
