@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/container/components/home/home.component';
+import { OrdemCadastroComponent } from './pages/container/components/ordens/components/ordem-cadastro/ordem-cadastro.component';
 import { OrdensComponent } from './pages/container/components/ordens/ordens.component';
 import { ProdutosComponent } from './pages/container/components/produtos/produtos.component';
 import { UsuariosComponent } from './pages/container/components/usuarios/usuarios.component';
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: "ordens",
         component: OrdensComponent,
+      },
+      {
+        path: "ordens/cadastrar",
+        component: OrdemCadastroComponent,
       },
       {
         path: "produtos",

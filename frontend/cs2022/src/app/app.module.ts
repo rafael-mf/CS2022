@@ -43,7 +43,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { RecuperarSenhaComponent } from './pages/login/components/recuperar-senha/recuperar-senha.component';
 import { MenuDesktopComponent } from './pages/container/menu/menu-desktop/menu-desktop.component';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OrdemCadastroComponent } from './pages/container/components/ordens/components/ordem-cadastro/ordem-cadastro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +58,7 @@ import { FormsModule } from '@angular/forms';
     UsuariosComponent,
     RecuperarSenhaComponent,
     MenuDesktopComponent,
+    OrdemCadastroComponent,
 
    ],
   imports: [
@@ -65,7 +67,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatIconModule,
     MatInputModule,
+    MatStepperModule,
     MatButtonModule,
+    ReactiveFormsModule,
     FormsModule,
     MatInputModule,
     MatTabsModule,
